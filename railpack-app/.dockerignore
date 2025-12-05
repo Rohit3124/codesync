@@ -1,0 +1,13 @@
+# Ignore node modules and build artifacts
+
+node_modules
+/build
+/dist
+/.turbo
+/.next
+/.cache
+.vscode
+.env
+.railway
+\*.log
+.DS_Store

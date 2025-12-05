@@ -1,0 +1,18 @@
+# Minimal Railway config for Code-Sync railpack
+# This file documents service build context and ports for convenience.
+# Railway's exact TOML schema can vary; use this as a lightweight reference
+# and the Railway CLI when linking/updating services.
+project = "code-sync-railpack"
+
+# Paths are relative to this `railway.toml` file. The monorepo has `server` and
+# `client` at the repo root, so reference them with `..` when this file lives
+# in `railpack-app`.
+[services.server]
+path = "../server"
+dockerfile = "Dockerfile"
+port = 3000
+
+[services.client]
+path = "../client"
+dockerfile = "Dockerfile"
+port = 5173
